@@ -30,11 +30,9 @@ I'm passionate about building **web platforms** and **data pipelines** that solv
 - ❤️ [**CharityConnect**](https://github.com/25thOliver/CharityConnect)  
   A donor–recipient platform to simplify charity management and donations, built with Django and React.
 
-- 🎓 **Student Portal Platform**  
+- 🎓 [**Student Portal Platform**](https://github.com/25thOliver/Saharan-University-Portal)  
   Spring Boot + React-based academic platform with secure user registration, profile management, and course tracking.
 
-- 🏅 **MVP Sports Club System**  
-  Web system for managing club members, match statistics, and performance analytics.
 
 See more on my [GitHub Repositories](https://github.com/25thOliver?tab=repositories) 📂
 
