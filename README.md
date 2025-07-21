@@ -68,7 +68,7 @@ See more on my [GitHub Repositories](https://github.com/25thOliver?tab=repositor
 
 ### 📈 GitHub Stats
 
-![Oliver's GitHub stats](https://github-readme-stats.vercel.app/api?username=25thOliver&show_icons=true&theme=default)
+![Oliver's GitHub stats](https://github-readme-stats.vercel.app/api?username=25thOliver&show_icons=true&theme=dark)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=25thOliver&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
@@ -78,7 +78,6 @@ See more on my [GitHub Repositories](https://github.com/25thOliver?tab=repositor
 
 ![GitHub Streak](https://streak-stats.demolab.com/?user=25thOliver&theme=default)
 
-![Oliver's GitHub stats](https://github-readme-stats.vercel.app/api?username=25thOliver&show_icons=true&theme=dark)
 
 
 ---
