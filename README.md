@@ -78,7 +78,8 @@ See more on my [GitHub Repositories](https://github.com/25thOliver?tab=repositor
 
 ![GitHub Streak](https://streak-stats.demolab.com/?user=25thOliver&theme=default)
 
-![Activity Graph](https://github-readme-activity-graph.cyclic.app/graph?username=25thOliver&theme=github)
+![Oliver's GitHub stats](https://github-readme-stats.vercel.app/api?username=25thOliver&show_icons=true&theme=dark)
+
 
 ---
 
