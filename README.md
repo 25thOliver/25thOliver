@@ -1,5 +1,6 @@
 <!-- Optional GIF Banner -->
-<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100%" alt="Welcome Banner" />
+<img src="https://raw.githubusercontent.com/25thOliver/25thOliver/main/A_terminal-style_digital_graphic_design_GIF_showca.png" width="100%" alt="Welcome Banner" />
+
 
 # 👋 Hi, I'm Oliver Samwel
 
