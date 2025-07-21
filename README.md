@@ -1,5 +1,5 @@
 <!-- Optional GIF Banner -->
-<img src="[https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif](https://chatgpt.com/s/m_687db51a83008191a50a2f6c08303412)" width="100%" alt="Welcome Banner" />
+<img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="100%" alt="Welcome Banner" />
 
 # 👋 Hi, I'm Oliver Samwel
 
