@@ -1,6 +1,3 @@
-<!-- Optional GIF Banner -->
-<img src="https://raw.githubusercontent.com/25thOliver/25thOliver/main/banner.png" width="100%" alt="Welcome Banner" />
-
 # Hi, I'm Oliver Samwel
 
 ## Data Engineer | Cloud & Big Data Enthusiast | Based in Nairobi, Kenya
