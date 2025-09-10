@@ -1,5 +1,5 @@
 <!-- Optional GIF Banner -->
-<img src=["https://raw.githubusercontent.com/25thOliver/25thOliver/main/banner.png"](https://chatgpt.com/s/m_68c116abca7881919554eda45d20e5d3)" width="100%" alt="Welcome Banner" />
+<img src="https://raw.githubusercontent.com/25thOliver/25thOliver/main/banner.png" width="100%" alt="Welcome Banner" />
 
 # Hi, I'm Oliver Samwel
 
