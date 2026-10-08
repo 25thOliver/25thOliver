@@ -1,85 +1,175 @@
 # Hi, I'm Oliver Samwel
 
-## Data Engineer | Cloud & Big Data Enthusiast | Based in Nairobi, Kenya
+### Data Engineer | Python • SQL • Data Pipelines • CDC • Cloud & Data Platforms
 
-I’m passionate about building **scalable data pipelines**, **real-time streaming solutions**, and **cloud-based infrastructures** that turn raw information into actionable insights. My focus is on creating reliable, efficient, and impactful systems that empower data-driven decision-making.  
+I build data systems that move data from source to storage, transformation, and analytics.
 
----
+My work spans synthetic data generation, API-based ingestion, ETL/ELT pipelines, workflow orchestration, change data capture, event streaming, data quality, containerized infrastructure, and CI/CD.
 
-### Current Focus
-
-Advancing my journey as a **Data Engineer**, working on modern tools and platforms to design and maintain end-to-end data workflows.  
-
-**Core Areas of Interest:**  
-- ETL/ELT Processes  
-- Data Warehousing & Data Lakes  
-- Pipeline Orchestration  
-- Real-Time & Batch Processing  
-- Cloud Data Platforms  
+I focus on building systems that are practical, reproducible, and understandable from ingestion through to the final analytical output.
 
 ---
 
-### Projects I'm Proud Of  
+## Core Technologies
 
-- **Streaming Pipeline with Kafka + Airflow**  
-  Building a real-time data pipeline prototype to process and analyze streaming events at scale.  
+**Languages & Data**
+- Python
+- SQL
+- Pandas
+- PostgreSQL
+- MySQL
 
-- **Data Lakehouse Experiment**  
-  Designing a data lakehouse architecture with **Apache Spark + Delta Lake**, supporting both analytics and machine learning use cases.  
+**Data Engineering**
+- ETL / ELT
+- Data ingestion
+- Data transformation
+- Data quality & testing
+- Data warehousing concepts
+- Change Data Capture (CDC)
+- Event-driven data pipelines
+- Workflow orchestration
 
-- **Orchestrated ETL with Airflow**  
-  Automating workflows for ingesting, cleaning, and loading data into a warehouse for analysis.  
-
-👉 See more on my [GitHub Repositories](https://github.com/25thOliver?tab=repositories) 📂  
-
----
-
-### Tech Stack & Tools  
-
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=fff)  
-![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=fff)  
-![Apache Spark](https://img.shields.io/badge/Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white)  
-![Apache Kafka](https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)  
-![Apache Airflow](https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white)  
-![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)  
-![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)  
-![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white)  
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)  
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)  
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)  
-
----
-
-### Currently Learning  
-
-- Real-Time Stream Processing with **Kafka + Spark Structured Streaming**  
-- Advanced Orchestration with **Airflow & dbt**  
-- Building scalable data warehouses on **BigQuery & Snowflake**  
-- Cloud-native architectures with **AWS/GCP**  
+**Platforms & Tools**
+- Apache Kafka
+- Debezium
+- Apache Airflow
+- dbt
+- MinIO
+- Docker & Docker Compose
+- Grafana
+- Apache Superset
+- Git & GitHub
+- GitHub Actions / CI/CD
 
 ---
 
-### GitHub Stats  
+# Featured Projects
 
-![Oliver's GitHub stats](https://github-readme-stats.vercel.app/api?username=25thOliver&show_icons=true&theme=dark)  
+## Datagen — Synthetic Data Generation Library
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=25thOliver&layout=compact)](https://github.com/anuraghazra/github-readme-stats)  
+[View Datagen on GitHub](https://github.com/25thOliver/Datagen)
+
+**Datagen** is a Python package for generating localized synthetic tabular data for development, testing, analytics prototyping, and data engineering workflows.
+
+It is the project I use to explore the engineering side of building and maintaining a reusable Python data tool.
+
+### What it does
+
+- Generates synthetic **Kenyan user profiles**, including local phone numbers, addresses, cities, and geographic coordinates.
+- Generates **employee and salary data** across departments and experience levels.
+- Generates **global business region metadata**.
+- Generates **vehicle inventory data** focused on the Kenyan automotive market.
+- Supports deterministic data generation through seed control.
+- Supports multiple output formats including CSV, JSON, Excel, and Parquet.
+- Provides a Python API and command-line workflow for generating datasets.
+- Includes automated tests and CI/CD through GitHub Actions.
+- Provides Docker-based development support.
+
+### Why it matters
+
+Synthetic data is useful when building and testing data pipelines without relying on sensitive or production datasets. Datagen provides a reusable way to create controlled datasets that can be used to seed databases, prototype ETL/ELT pipelines, test transformations, and support analytics development.
+
+**Stack:** Python, Pandas, Faker, Docker, pytest, GitHub Actions
 
 ---
 
-### Contribution Graph  
+## Real-Time Earthquake CDC Pipeline
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=25thOliver&theme=default)  
+[View Real-Time Earthquake CDC on GitHub](https://github.com/25thOliver/Real-Time-Earthquake-CDC)
+
+An end-to-end **Change Data Capture and streaming pipeline** that ingests live and revised earthquake events from the USGS FDSN API and moves them from an operational database into an analytical PostgreSQL environment.
+
+### Architecture
+
+`USGS API → MySQL → Debezium → Kafka → JDBC Sink → PostgreSQL → Grafana`
+
+### What it demonstrates
+
+- Python-based API ingestion running on a 60-second polling cycle.
+- `updatedafter` watermarking to capture new and revised earthquake events.
+- High-watermark recovery to reduce data gaps after ingestion downtime.
+- MySQL upserts that allow revised earthquake records to produce downstream CDC events.
+- MySQL row-based binary logging.
+- Debezium-based Change Data Capture.
+- Kafka topics for asynchronous event streaming.
+- JDBC Sink delivery into PostgreSQL.
+- Grafana dashboards for real-time seismic activity and trends.
+- Docker Compose orchestration of the multi-service environment.
+- Automated tests with pytest.
+- GitHub Actions CI/CD for automated test execution.
+
+**Stack:** Python, MySQL, PostgreSQL, Kafka, Debezium, Kafka Connect, Docker Compose, Grafana, pytest, GitHub Actions
 
 ---
 
-### Let's Connect  
+## Kenya Economic & Weather Intelligence Pipeline
 
-- 🌐 Portfolio: [Porfolio Website](https://25oliver-web-portfolio.vercel.app/) 
-- 💼 [LinkedIn](http://www.linkedin.com/in/samwel-oliver)  
-- 🐦 [Twitter/X](https://x.com/bug_alchemist)  
+[View Kenya Economic & Weather Pipeline on GitHub](https://github.com/25thOliver/Kenya-Weather-Economic-Pipeline)
+
+A Dockerized data engineering pipeline that brings together **economic indicators and weather data for Kenya**, taking the data through ingestion, raw storage, transformation, validation, database loading, and analytics.
+
+### Pipeline components
+
+- **World Bank API** — economic indicators for Kenya.
+- **Open-Meteo API** — weather observations for selected Kenyan locations.
+- **Python ingestion services** — collect and process source data.
+- **MinIO** — object storage for raw pipeline data.
+- **PostgreSQL** — relational storage for analytical datasets.
+- **Apache Airflow** — workflow orchestration.
+- **dbt** — transformation and data quality testing.
+- **Apache Superset** — analytical visualization.
+- **Docker Compose** — containerized infrastructure.
+
+### What it demonstrates
+
+- API-based data ingestion from multiple external sources.
+- Raw-data storage before transformation.
+- ETL/ELT pipeline design.
+- Workflow orchestration.
+- Data transformation and validation with dbt.
+- PostgreSQL data modeling and constraints.
+- Data quality testing.
+- Object storage using an S3-compatible storage layer.
+- Multi-service containerized development.
+- Git/GitHub-based incremental engineering workflow.
+
+**Stack:** Python, PostgreSQL, MinIO, Apache Airflow, dbt, Docker, Apache Superset, World Bank API, Open-Meteo API
 
 ---
 
-_“Data is the new oil. But it’s crude without refining, it's just data.”_  
+# Engineering Focus
+
+Across these projects, I work primarily around:
+
+- Building and maintaining data ingestion pipelines
+- Designing ETL/ELT workflows
+- Working with relational and analytical databases
+- Data transformation and quality validation
+- Workflow orchestration
+- Streaming and Change Data Capture
+- Containerizing data infrastructure
+- Automated testing and CI/CD
+- Building systems that can be inspected, reproduced, and extended
+
+I am particularly interested in data engineering roles where I can work on real data platforms, pipelines, and infrastructure while continuing to deepen my experience with production-scale systems.
+
+---
+
+# GitHub Activity
+
+I use GitHub to build, document, and track the systems I work on.
+
+![Oliver's GitHub stats](https://github-readme-stats.vercel.app/api?username=25thOliver&show_icons=true&theme=dark)
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=25thOliver&theme=default)](https://git.io/streak-stats)
+
+---
+
+# Connect
+
+- Portfolio: [25oliver-web-portfolio.vercel.app](https://25oliver-web-portfolio.vercel.app/)
+- LinkedIn: [Samwel Oliver](https://www.linkedin.com/in/samwel-oliver)
+- GitHub: [25thOliver](https://github.com/25thOliver)
+- X: [@bug_alchemist](https://x.com/bug_alchemist)
+
+---
